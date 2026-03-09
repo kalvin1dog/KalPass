@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KalPassApp</title>
     <base href="/KalPass/" />
-    
-    <link href="_framework/dotnet.js" rel="preload" as="script" fetchpriority="high" />
+   
+    <link href="_framework/dotnet#[.{fingerprint}].js" rel="preload" as="script" />
     
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
@@ -36,7 +36,8 @@
 
     <script src="js/crypto.js"></script>
     
-    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script
+    <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
     
     <script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>
 </body>
